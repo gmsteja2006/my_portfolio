@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manikanta Saran Teja Gowthu | AI & ML Developer • Full Stack Engineer</title>
+  <meta name="description" content="Portfolio of Manikanta Saran Teja Gowthu — AI & Machine Learning Developer, Full Stack Engineer specializing in FastAPI, LangGraph, self-correcting RAG systems, and database engineering." />
+  
+  <!-- Google Fonts: Syne, Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-warm">
+
+  <!-- Custom Cursor System -->
+  <div id="custom-cursor" class="custom-cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-label" id="cursor-label">REVEAL</div>
+  </div>
+
+  <!-- Ambient Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="brand-line">—</span>
+        <span class="brand-name" id="nav-brand-name">TEJA</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#achievements" class="nav-link">CODING & CERTS</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="status-badge" id="status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text" id="nav-status-text">AVAILABLE FOR NEW PROJECTS</span>
+        </div>
+
+        <a href="assets/Manikanta_Saran_Teja_Resume.pdf" download="Manikanta_Saran_Teja_Resume.pdf" class="resume-download-btn magnetic-btn" id="header-resume-btn" title="Download Resume PDF">
+          <i data-lucide="file-down"></i>
+          <span>RESUME</span>
+        </a>
+
+        <button class="theme-toggle magnetic-btn" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">HOME</a></li>
+        <li><a href="#about" class="mobile-nav-link">ABOUT</a></li>
+        <li><a href="#skills" class="mobile-nav-link">SKILLS</a></li>
+        <li><a href="#achievements" class="mobile-nav-link">CODING & CERTS</a></li>
+        <li><a href="#projects" class="mobile-nav-link">PROJECTS</a></li>
+        <li><a href="#experience" class="mobile-nav-link">EXPERIENCE</a></li>
+        <li><a href="#contact" class="mobile-nav-link">CONTACT</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="assets/Manikanta_Saran_Teja_Resume.pdf" download="Manikanta_Saran_Teja_Resume.pdf" class="cta-btn primary-cta mobile-resume-btn" style="width:100%; margin-bottom: 1rem;">
+          <i data-lucide="file-down"></i>
+          <span>DOWNLOAD RESUME</span>
+        </a>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>AVAILABLE FOR NEW PROJECTS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION WITH ORGANIC CURSOR REVEAL -->
+    <section class="hero-section" id="hero">
+      <!-- Oversized Background Typography -->
+      <div class="hero-bg-words" aria-hidden="true">
+        <span class="bg-word word-1">CREATIVE</span>
+        <span class="bg-word word-2">WEBSITES</span>
+        <span class="bg-word word-3">NOT JUST</span>
+        <span class="bg-word word-4">CODE</span>
+      </div>
+
+      <!-- Technical / Editorial Grid Lines & Meta Markers -->
+      <div class="hero-meta-markers container">
+        <span class="marker marker-mid-right">• CREATIVE DEV</span>
+        <div class="scroll-indicator">
+          <span>• SCROLL TO DISCOVER</span>
+          <i data-lucide="arrow-down" class="scroll-arrow"></i>
+        </div>
+      </div>
+
+      <div class="hero-content-wrapper container">
+        <!-- Left Column: Copy & CTAs -->
+        <div class="hero-text-col">
+          <div class="hero-pill-badge" id="hero-tagline-badge">
+            <span class="badge-dash">—</span>
+            <span id="hero-tagline">AI & ML DEVELOPER • FULL STACK & SOFTWARE ENGINEER</span>
+          </div>
+
+          <h1 class="hero-headline" id="hero-headline">
+            I BUILD DIGITAL <br />
+            <span class="headline-accent">EXPERIENCES THAT</span> <br />
+            FEEL ALIVE.
+          </h1>
+
+          <p class="hero-subhead" id="hero-subhead">
+            Developer, designer and creative technologist crafting high-performance websites, interactive experiences and AI-powered products.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="cta-btn primary-cta magnetic-btn" id="hero-primary-cta">
+              <span class="cta-dot"></span>
+              <span class="cta-label" id="hero-primary-cta-label">LET'S CONNECT</span>
+              <div class="btn-hover-glow"></div>
+            </a>
+            <a href="#projects" class="cta-btn secondary-cta magnetic-btn" id="hero-secondary-cta">
+              <span class="cta-label" id="hero-secondary-cta-label">VIEW MY WORK</span>
+              <i data-lucide="arrow-up-right" class="cta-icon"></i>
+            </a>
+          </div>
+
+          <!-- Quick Micro Stats / Feature list -->
+          <div class="hero-quick-meta">
+            <div class="quick-item">
+              <span class="quick-val">400+</span>
+              <span class="quick-lbl">CP Problems Solved</span>
+            </div>
+            <div class="quick-divider"></div>
+            <div class="quick-item">
+              <span class="quick-val">7.50</span>
+              <span class="quick-lbl">B.Tech CGPA</span>
+            </div>
+            <div class="quick-divider"></div>
+            <div class="quick-item">
+              <span class="quick-val">AI / ML</span>
+              <span class="quick-lbl">Aditya University</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Seamlessly Merged Hero Reveal Layer -->
+        <div class="hero-portrait-col">
+          <div class="portrait-stage seamless-portrait" id="portrait-stage">
+            
+            <!-- Floating Tech Badges (Right Side Only - No Left Collisions) -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-dot-red"></span>
+              <span>AI / RAG</span>
+            </div>
+
+            <div class="floating-badge badge-mid-right">
+              <span class="badge-dot-gray"></span>
+              <span>400+ CP SOLVED</span>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <span>[ HOVER TO DISCOVER ]</span>
+              <span class="badge-highlight">SCROLL</span>
+            </div>
+
+            <!-- Base Image: Clean Editorial Cutout Portrait -->
+            <div class="portrait-layer base-portrait">
+              <img src="assets/hero-clean.png?v=2" alt="Developer Clean Portrait" id="img-clean" class="portrait-img" draggable="false" />
+            </div>
+
+            <!-- Reveal Mask Layer: Futuristic Cyber AI Portrait (Revealed via organic morphing mask) -->
+            <div class="portrait-layer cyber-portrait" id="cyber-layer">
+              <canvas id="reveal-canvas" class="reveal-canvas"></canvas>
+              <!-- Hidden source for cyber image rendered to canvas -->
+              <img src="assets/hero-cyber.png?v=2" alt="Cybernetic AI Reveal Portrait" id="img-cyber" class="portrait-img hidden-source" draggable="false" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-number">01</span>
+            <span class="tag-title">ABOUT ME</span>
+          </div>
+          <h2 class="section-title" id="about-title">
+            Bridging the gap between creative design and autonomous intelligence.
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-col" id="about-bio-container">
+            <!-- Populated from config -->
+          </div>
+
+          <div class="about-stats-col">
+            <div class="stats-grid" id="about-stats-grid">
+              <!-- Populated from config -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Philosophy Cards -->
+        <div class="highlights-grid" id="about-highlights-grid">
+          <!-- Populated from config -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-number">02</span>
+            <span class="tag-title">TECH & CAPABILITIES</span>
+          </div>
+          <h2 class="section-title">
+            Engineered for performance, crafted for elegance.
+          </h2>
+        </div>
+
+        <div class="skills-matrix" id="skills-matrix-container">
+          <!-- Populated from config -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CODING PROFILES & CERTIFICATES SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-number">03</span>
+            <span class="tag-title">CODING PROFILES & CERTIFICATIONS</span>
+          </div>
+          <h2 class="section-title">
+            Competitive problem solving track record and verified credentials.
+          </h2>
+        </div>
+
+        <!-- Subsection A: Competitive Programming & Profiles -->
+        <div class="achieve-group">
+          <div class="achieve-group-header">
+            <div class="group-title-wrap">
+              <span class="group-indicator"></span>
+              <h3 class="group-heading">COMPETITIVE CODING PROFILES</h3>
+            </div>
+            <span class="group-badge">400+ TOTAL PROBLEMS SOLVED</span>
+          </div>
+          <div class="profiles-grid" id="coding-profiles-container">
+            <!-- Populated from config.codingProfiles -->
+          </div>
+        </div>
+
+        <!-- Subsection B: Verified Industry Certifications -->
+        <div class="achieve-group certs-group">
+          <div class="achieve-group-header">
+            <div class="group-title-wrap">
+              <span class="group-indicator indicator-cyan"></span>
+              <h3 class="group-heading">VERIFIED CERTIFICATIONS</h3>
+            </div>
+            <span class="group-badge">CISCO • MICROSOFT • HACKERRANK • CAMBRIDGE</span>
+          </div>
+          <div class="certs-grid" id="certificates-container">
+            <!-- Populated from config.certificates -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-number">04</span>
+            <span class="tag-title">FEATURED WORK</span>
+          </div>
+          <h2 class="section-title">
+            Selected projects pushing the boundary of digital craft.
+          </h2>
+        </div>
+
+        <div class="projects-list" id="projects-list-container">
+          <!-- Populated from config -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="tag-number">05</span>
+            <span class="tag-title">EXPERIENCE & JOURNEY</span>
+          </div>
+          <h2 class="section-title">
+            Track record of delivering impactful software.
+          </h2>
+        </div>
+
+        <div class="timeline-container" id="timeline-container">
+          <!-- Populated from config -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-header">
+            <div class="section-tag">
+              <span class="tag-number">06</span>
+              <span class="tag-title">GET IN TOUCH</span>
+            </div>
+            <h2 class="contact-headline">
+              HAVE AN EXCITING PROJECT? <br />
+              <span class="headline-accent">LET'S BUILD SOMETHING EXTRAORDINARY.</span>
+            </h2>
+            <p class="contact-subhead">
+              Available for freelance engagements, full-time opportunities, or collaborative AI research.
+            </p>
+          </div>
+
+          <div class="contact-content-grid">
+            <!-- Left: Direct Action & Email -->
+            <div class="contact-info-panel">
+              <div class="email-action-box">
+                <span class="action-label">DIRECT EMAIL</span>
+                <div class="email-copy-wrapper">
+                  <span class="email-text" id="contact-email-text">contact@teja.dev</span>
+                  <button class="copy-email-btn magnetic-btn" id="copy-email-btn" title="Copy email address">
+                    <i data-lucide="copy" id="copy-icon"></i>
+                    <span id="copy-label">COPY</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="social-links-panel">
+                <span class="action-label">CONNECT ON SOCIAL</span>
+                <div class="social-pill-group" id="social-links-container">
+                  <!-- Populated from config -->
+                </div>
+              </div>
+
+              <div class="location-badge">
+                <i data-lucide="map-pin"></i>
+                <span id="contact-location">HYDERABAD, INDIA</span>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Message Form -->
+            <div class="contact-form-panel">
+              <form class="contact-form" id="contact-form" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="form-name">YOUR NAME</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="form-email">YOUR EMAIL</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="form-message">MESSAGE</label>
+                  <textarea id="form-message" rows="4" placeholder="Tell me about your project, idea, or timeline..." required></textarea>
+                </div>
+                <button type="submit" class="cta-btn primary-cta submit-form-btn magnetic-btn" id="send-message-btn">
+                  <span class="cta-dot"></span>
+                  <span>SEND MESSAGE</span>
+                  <i data-lucide="send" class="cta-icon"></i>
+                </button>
+                <div class="form-success-msg" id="form-success-msg">
+                  <i data-lucide="check-circle"></i>
+                  <span>Message sent successfully! I'll get back to you within 24 hours.</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo" id="footer-logo">TEJA</span>
+        <span class="footer-copy">© <span id="footer-year">2026</span> • CRAFTED WITH PRECISION</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top magnetic-btn">
+          <span>BACK TO TOP</span>
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EDIT DETAILS LIVE MODAL -->
+  <div class="modal-backdrop" id="edit-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3>CUSTOMIZE PORTFOLIO DETAILS</h3>
+          <p>Update your name, title, bio, or contact details anytime!</p>
+        </div>
+        <button class="modal-close-btn" id="close-edit-modal-btn">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-input-row">
+          <div class="form-group">
+            <label for="edit-name">YOUR NAME</label>
+            <input type="text" id="edit-name" />
+          </div>
+          <div class="form-group">
+            <label for="edit-email">YOUR EMAIL</label>
+            <input type="email" id="edit-email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="edit-tagline">TAGLINE / TITLE</label>
+          <input type="text" id="edit-tagline" />
+        </div>
+        <div class="form-group">
+          <label for="edit-headline">HERO MAIN HEADLINE</label>
+          <input type="text" id="edit-headline" />
+        </div>
+        <div class="form-group">
+          <label for="edit-subhead">HERO SUBHEAD</label>
+          <textarea id="edit-subhead" rows="2"></textarea>
+        </div>
+        <div class="modal-input-row">
+          <div class="form-group">
+            <label for="edit-location">LOCATION</label>
+            <input type="text" id="edit-location" />
+          </div>
+          <div class="form-group">
+            <label for="edit-status">AVAILABILITY STATUS</label>
+            <input type="text" id="edit-status" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="cta-btn secondary-cta" id="cancel-edit-btn">CANCEL</button>
+        <button class="cta-btn primary-cta" id="save-edit-btn">
+          <span class="cta-dot"></span>
+          <span>SAVE & APPLY CHANGES</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
