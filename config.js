@@ -14,6 +14,7 @@ window.PORTFOLIO_CONFIG = {
   email: "gowthumanikantasaranteja@gmail.com",
   github: "https://github.com/gmsteja2006",
   linkedin: "https://linkedin.com/in/teja-gowthu-4b8a65337",
+  instagram: "https://www.instagram.com/teja_gowthu_/",
   twitter: "https://x.com",
 
   // Hero Section
